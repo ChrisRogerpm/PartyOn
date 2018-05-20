@@ -1,0 +1,28 @@
+#datos {
+    margin: 60px;
+
+}
+
+#lista {
+    margin: 80px;
+
+}
+
+#img1 {
+    float: left;
+}
+
+#contieneMapa {
+    width: 400px;
+    height: 300px;
+}
+
+#leftMapa {
+    margin-left: 50px;
+}
+
+#listado {
+    margin-top: 50px;
+    padding: 30px;
+
+}
