@@ -11,18 +11,29 @@
 |
 */
 
+use App\User;
+
 Route::get('/', function () {
     return view('welcome');
+//    $email = "Christian@gmail.com";
+//    $password = "123123";
+//
+//    if (Auth::attempt(['email' => $email, 'password' => $password])) {
+//        $user = Auth::user();
+//        return Response::json($user);
+//    } else {
+//        echo "no";
+//    }
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('PanelAdministracion','PanelController@index')->name('PanelAdministracion');
-Route::get('Historial','HistorialController@index')->name('Historial');
-Route::get('EstadoCuenta','CuentaController@index')->name('EstadoCuenta');
-Route::get('Estadistica','EstadisticaController@index')->name('Estadistica');
+Route::get('PanelAdministracion', 'PanelController@index')->name('PanelAdministracion');
+Route::get('Historial', 'HistorialController@index')->name('Historial');
+Route::get('EstadoCuenta', 'CuentaController@index')->name('EstadoCuenta');
+Route::get('Estadistica', 'EstadisticaController@index')->name('Estadistica');
 
 
-Route::post('RegistrarEvento','PanelController@RegistrarEvento')->name('RegistrarEvento');
+Route::post('RegistrarEvento', 'PanelController@RegistrarEvento')->name('RegistrarEvento');

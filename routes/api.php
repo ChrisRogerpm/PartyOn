@@ -18,3 +18,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/ListaEventos','Api\WebServiceController@Eventos');
+
+Route::post('/IniciarSesion','Api\WebServiceController@Login');
