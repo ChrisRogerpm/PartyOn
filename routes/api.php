@@ -18,5 +18,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/ListaEventos','Api\WebServiceController@Eventos');
+Route::get('/ListaEventosFiesta','Api\WebServiceController@ListarEventoFiesta');
+Route::get('/ListaEventosMusica','Api\WebServiceController@ListarEventoMusica');
+Route::get('/ListaEventosGastronomia','Api\WebServiceController@ListarEventoGastronomia');
+Route::get('/ListaEventosDeporte','Api\WebServiceController@ListarEventoDeporte');
+Route::get('/ListaEventosOtro','Api\WebServiceController@ListarEventoOtro');
+
 
 Route::post('/IniciarSesion','Api\WebServiceController@Login');
