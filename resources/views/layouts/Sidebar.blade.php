@@ -18,7 +18,7 @@
         <li class="active"><a href="{{route('PanelAdministracion')}}">Registrar Evento</a></li>
         <li><a href="{{route('Historial')}}">Historial</a></li>
         <li><a href="{{route('EstadoCuenta')}}">Estado de cuenta</a></li>
-        <li><a href="{{route('Estadistica')}}">Estadistica</a></li>
+<!--        <li><a href="{{route('Estadistica')}}">Estadistica</a></li>     -->
         <li>
             <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                 <em class="fa fa-power-off">&nbsp;</em> Cerrar Sesión
