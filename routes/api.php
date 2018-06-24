@@ -23,6 +23,11 @@ Route::get('/ListaEventosMusica','Api\WebServiceController@ListarEventoMusica');
 Route::get('/ListaEventosGastronomia','Api\WebServiceController@ListarEventoGastronomia');
 Route::get('/ListaEventosDeporte','Api\WebServiceController@ListarEventoDeporte');
 Route::get('/ListaEventosOtro','Api\WebServiceController@ListarEventoOtro');
+Route::post('/MarcarAsistente','Api\WebServiceController@MarcarAsistente');
+Route::post('/MarcarFavorito','Api\WebServiceController@MarcarFavorito');
+
+Route::post('/VerificarFavorito','Api\WebServiceController@VerificarFavorito');
+Route::post('/VerificarAsistir','Api\WebServiceController@VerificarAsistencia');
 
 
 Route::post('/IniciarSesion','Api\WebServiceController@Login');
